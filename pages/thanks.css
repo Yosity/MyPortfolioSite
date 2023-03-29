@@ -1,0 +1,42 @@
+:root {
+    --mint: #03f6a5;
+    --purple: #301E67;
+    --light-purple: #AA77FF;
+    --pink: #E384FF;
+    --very-dark-purple: #03001C;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-purple);
+    font-family: "League Spartan", sans-serif;
+
+}
+
+div{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--purple);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 0 var(--light-purple);
+}
+h1{
+    color: var(--mint);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+p{
+    color: white;
+    font-size: 1.8rem;
+}
