@@ -48,11 +48,7 @@ html::-webkit-scrollbar-thumb{
 }
 }
 
-@media (max-width: 900px) {
-  body {
-    padding-bottom: 5rem;
-  }
-}
+
 @media (max-width:500px) {
     .bubble{
       display: none;
@@ -471,7 +467,7 @@ h1 b {
 .project {
   background-color: var(--purple);
   margin: auto;
-  width: clamp(290px,27vw,450px);
+  width: clamp(290px,27vw,500px);
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -603,7 +599,7 @@ h1 b {
 @media (max-width: 900px) {
   #project-section {
     height: unset;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     padding-top: 6rem;
   }
   #project-section h2 {
