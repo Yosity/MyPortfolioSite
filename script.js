@@ -27,7 +27,6 @@ var lastScrollTop = 0;
 let windownHeight = screen.height;
 window.addEventListener("scroll", ()=>{
     if (!mediaQuery.matches) {
-    document.getElementById("contactNav").href = "#contact";
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
     if (lastScrollTop-15 > scrolled){
@@ -43,9 +42,7 @@ window.addEventListener("scroll", ()=>{
     desktopNav.style.opacity = "0"
     lastScrollTop = scrolled <= 0 ? 0 : scrolled; // For Mobile or negative scrolling
     }
-    else{
-        document.getElementById("contactNav").href = "#contact-mobile";
-    }
+   
 
 },false)
 
