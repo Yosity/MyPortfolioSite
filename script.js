@@ -44,7 +44,7 @@ window.addEventListener("scroll", ()=>{
     lastScrollTop = scrolled <= 0 ? 0 : scrolled; // For Mobile or negative scrolling
     }
     else{
-        document.getElementById("contactNav").href = "#intro";
+        document.getElementById("contactNav").href = "#contact-mobile";
     }
 
 },false)
