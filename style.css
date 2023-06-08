@@ -200,6 +200,7 @@ a {
     opacity: 1;
     left: 0;
     right: 0;
+    display: none;
   }
   #nav-1{
     gap: 2px;
@@ -454,18 +455,27 @@ h1 b {
 @media (max-width: 900px) {
   #about {
     text-align: center;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
     grid-gap: 6rem;
     height: unset;
     padding: 2rem;
     padding-top: 7rem ;
-
+  }
+  #about h2{
+    font-size: 2rem;
+  }
+  #about h3{
+    font-size: 1.5rem;
   }
   .info,.skills{
     max-width: 500px;
   }
 }
+@media (max-width : 750px) {
+  #about{
+    flex-direction: column;
+  }
+}
+
 #project-section {
   padding-top: 5rem;
   background-color: var(--Black);
@@ -500,8 +510,7 @@ h1 b {
   cursor: pointer;
   overflow: hidden;
   border-radius: 1.3rem;
-  -webkit-box-shadow: 0 1px 2px 0 var(--Bright-Orange);
-   box-shadow: 0 1px 2px 0 var(--Bright-Orange);
+   transition: box-shadow 0.2s;
 }
 
 .project img {
@@ -587,6 +596,9 @@ h1 b {
   .mask p {
     font-size: 20px;
   }
+  .project:hover{
+    box-shadow: 0 0px 2px 1px var(--Bright-Orange);
+  }
   .project:hover > .mask {
     opacity: 1;
   }
@@ -631,10 +643,12 @@ h1 b {
     height: unset;
     padding-bottom: 3rem;
     padding-top: 6rem;
+ 
   }
   #project-section h2 {
     margin: 0 2rem;
     margin-bottom: 2rem;
+    font-size: 2rem;
   }
   #flex-wrapper {
     width: 100%;
@@ -684,7 +698,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem;
-  width: min(60%,1000px);
+  width: min(60%,600px);
   border-radius: 1rem;
   -webkit-box-shadow: 0 1.5px 0px 0 var(--Bright-Orange);
           box-shadow: 0 1.5px 0px 0 var(--Bright-Orange);
