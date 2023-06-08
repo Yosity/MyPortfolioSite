@@ -227,7 +227,7 @@ a {
 
 
 h1,.name{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 h1{
   line-height: 4rem;
@@ -286,7 +286,7 @@ h1 b {
 #occupation {
   opacity: 0;
   line-height: 5px;
-  font-size: clamp(1.25rem,2vw,2.5rem);
+  font-size: 1.8rem;
   background: -o-linear-gradient(left, white, var(--Darker-Orange));
   background: -webkit-gradient(linear, left top, right top, from(white), to(var(--Darker-Orange)));
   background: linear-gradient(90deg, white, var(--Darker-Orange));
@@ -316,17 +316,19 @@ h1 b {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  #occupation{
+    font-size: 1.25rem;
+  }
+  h1,.name{
+    font-size: 2.8rem;
+  }
 }
 @media (max-width: 340px) {
   .name-container{
     top: 50vh;
   }
   h1{
-    font-size: 2rem;
     font-weight: 400;
-  }
-  h1 b,.name{
-    font-size: 2.5rem;
   }
 }
 @media (max-height:530px) {
