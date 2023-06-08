@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 
 :root {
@@ -472,7 +466,10 @@ h1 b {
 }
 @media (max-width : 750px) {
   #about{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -505,12 +502,16 @@ h1 b {
 .project {
   background-color: var(--grey);
   margin: auto;
-  width: clamp(290px,23vw,450px);
+  width: clamp(300px,23vw,450px);
   position: relative;
   cursor: pointer;
   overflow: hidden;
   border-radius: 1.3rem;
+   -webkit-transition: -webkit-box-shadow 0.2s;
+   transition: -webkit-box-shadow 0.2s;
+   -o-transition: box-shadow 0.2s;
    transition: box-shadow 0.2s;
+   transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
 .project img {
@@ -597,7 +598,8 @@ h1 b {
     font-size: 20px;
   }
   .project:hover{
-    box-shadow: 0 0px 2px 1px var(--Bright-Orange);
+    -webkit-box-shadow: 0 0px 2px 1px var(--Bright-Orange);
+            box-shadow: 0 0px 2px 1px var(--Bright-Orange);
   }
   .project:hover > .mask {
     opacity: 1;
